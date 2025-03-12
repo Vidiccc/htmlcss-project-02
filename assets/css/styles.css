@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #171100;
+    --secondary-color: #ffb900;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+body h1,
+body h2 {
+    font-family: "Sen", sans-serif;
+}
+
+/* ============== Common ====================*/
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ============== Common ====================*/
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+    min-width: 118px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: var(--primary-color);
+
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+/* ============== Header ====================*/
+.header {
+    padding: 36px 0 8px;
+    background-color: #fffcf4;
+}
+
+.header.fixed {
+    position: sticky;
+    top: -28px;
+}
+
+.header .main-content {
+    display: flex;
+    align-items: center;
+}
+
+.header .nav-bar {
+    margin-left: auto;
+}
+
+.header .nav-bar ul {
+    display: flex;
+    align-items: center;
+}
+
+.header .nav-bar a {
+    padding: 8px 21px;
+    color: #5f5b53;
+    font-size: 1.6rem;
+}
+
+.header .nav-bar .active {
+    position: relative;
+}
+
+.header .nav-bar a:hover,
+.header .nav-bar .active a {
+    color: var(--primary-color);
+    text-shadow: -1px 0px 0 currentColor;
+}
+
+.header .nav-bar .active a::after {
+    content: "";
+    position: absolute;
+    left: 21px;
+    bottom: -6px;
+    width: 12px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: var(--primary-color);
+}
+
+.header .action {
+    margin-left: 49px;
+}
+
+.header .action a {
+    min-width: 144px;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+/* ============== Common ====================*/
+/* ============== Common ====================*/
+/* ============== Common ====================*/
+/* ============== Common ====================*/
+main {
+    height: 1000px;
+}
