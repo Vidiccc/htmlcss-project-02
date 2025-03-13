@@ -19,9 +19,14 @@ body {
 body h1,
 body h2 {
     font-family: "Sen", sans-serif;
+    color: var(--primary-color);
 }
 
 /* ============== Common ====================*/
+a {
+    text-decoration: none;
+}
+
 .main-content {
     width: 1170px;
     max-width: calc(100% - 48px);
@@ -37,7 +42,7 @@ body h2 {
     padding: 0 16px;
     min-width: 118px;
     height: 50px;
-    border-radius: 25px;
+    border-radius: 999px;
     background-color: var(--primary-color);
 
     color: #fff;
@@ -45,9 +50,10 @@ body h2 {
     font-weight: 600;
 }
 
-a {
-    text-decoration: none;
+.btn:hover {
+    opacity: 0.9;
 }
+
 /* ============== Header ====================*/
 .header {
     padding: 36px 0 8px;
@@ -57,9 +63,10 @@ a {
 .header.fixed {
     position: sticky;
     top: -28px;
+    z-index: 1;
 }
 
-.header .main-content {
+.header .body {
     display: flex;
     align-items: center;
 }
@@ -104,13 +111,187 @@ a {
     margin-left: 49px;
 }
 
-.header .action a {
+.header .action .btn-sign-up {
     min-width: 144px;
     font-size: 1.6rem;
     font-weight: 500;
 }
 
-/* ============== Common ====================*/
+/* ============== Hero ====================*/
+.hero {
+    background-color: #fffcf4;
+}
+
+.hero .body {
+    display: flex;
+    justify-content: space-between;
+    padding: 56px 0 65px;
+}
+
+/* Hero left */
+.hero .media-block {
+    width: 48%;
+}
+
+.hero .media-block {
+    position: relative;
+}
+
+.hero .media-block .img {
+    width: 470px;
+    height: 685px;
+    object-fit: cover;
+    border-radius: 22px;
+    vertical-align: bottom;
+}
+
+.hero .summary {
+    width: 270px;
+    padding: 24px;
+    border-radius: 12px;
+
+    position: absolute;
+    right: 0px;
+    bottom: 48px;
+    background: #fff;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+    /*  */
+    /* display: none; */
+}
+
+.hero .summary .item {
+    display: flex;
+    align-items: center;
+}
+
+.hero .summary .item + .item {
+    margin-top: 14px;
+}
+
+.hero .summary .icon-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+
+    background-color: #ebeaff;
+    border-radius: 50%;
+}
+
+.hero .summary .icon-bg.orange {
+    background-color: #fff9e8;
+}
+
+.hero .summary .icon-bg.purple {
+    background-color: #fcefff;
+}
+
+.hero .summary .icon-bg.blue {
+    background-color: #ebeaff;
+}
+
+.hero .summary .info {
+    margin-left: 16px;
+}
+
+.hero .summary .label {
+    color: #5f5b53;
+    font-size: 1.4rem;
+    line-height: 1.86; /* 185.714% */
+}
+
+.hero .summary .title {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67; /* 166.667% */
+}
+
+/* Hero right */
+.hero .content-block {
+    padding: 64px 0 0 130px;
+    width: 52%;
+}
+
+.hero .content-block h1 {
+    font-size: 5.8rem;
+    font-weight: 700;
+    line-height: 1.17; /* 117.241% */
+    letter-spacing: -0.116rem;
+}
+
+.hero .content-block .desc {
+    margin-top: 22px;
+    color: #5f5b53;
+    font-size: 1.8rem;
+    line-height: 1.67; /* 166.667% */
+}
+
+.hero .cta-group {
+    margin-top: 38px;
+    display: flex;
+}
+
+.hero .cta-group .hero-btn {
+    min-width: 180px;
+    height: 64px;
+    border-radius: 32px;
+    background: var(--secondary-color);
+    font-size: 1.8rem;
+}
+
+.hero .watch-video {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-left: 28px;
+    padding: 0 8px;
+    border: none;
+    background-color: transparent;
+
+    font-family: Poppins;
+    cursor: pointer;
+}
+
+.hero .watch-video .icon-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.07);
+}
+
+.hero .watch-video span {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.hero .desc.engagement {
+    margin-top: 48px;
+}
+
+.hero .desc.stats {
+    margin-top: 8px;
+}
+
+.hero .desc.stats strong {
+    color: var(--primary-color);
+    font-family: "Sen", sans-serif;
+    font-size: 4.4rem;
+    font-weight: 700;
+    line-height: 5.4rem; /* 122.727% */
+    margin-right: 8px;
+}
+
+.hero .desc.stats strong:last-child {
+    margin-left: 28px;
+}
+
 /* ============== Common ====================*/
 /* ============== Common ====================*/
 /* ============== Common ====================*/
