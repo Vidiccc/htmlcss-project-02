@@ -3,8 +3,7 @@
 }
 
 :root {
-    --primary-color: #171100;
-    --secondary-color: #ffb900;
+    --primary-color: #ffb900;
 }
 
 html {
@@ -19,7 +18,7 @@ body {
 body h1,
 body h2 {
     font-family: "Sen", sans-serif;
-    color: var(--primary-color);
+    color: #171100;
 }
 
 /* ============== Common ====================*/
@@ -43,7 +42,7 @@ a {
     min-width: 118px;
     height: 50px;
     border-radius: 999px;
-    background-color: var(--primary-color);
+    background-color: #171100;
 
     color: #fff;
     font-size: 1.4rem;
@@ -92,7 +91,7 @@ a {
 
 .header .nav-bar a:hover,
 .header .nav-bar .active a {
-    color: var(--primary-color);
+    color: #171100;
     text-shadow: -1px 0px 0 currentColor;
 }
 
@@ -104,7 +103,7 @@ a {
     width: 12px;
     height: 2px;
     border-radius: 1px;
-    background-color: var(--primary-color);
+    background-color: #171100;
 }
 
 .header .action {
@@ -237,7 +236,7 @@ a {
     min-width: 180px;
     height: 64px;
     border-radius: 32px;
-    background: var(--secondary-color);
+    background: var(--primary-color);
     font-size: 1.8rem;
 }
 
@@ -266,7 +265,7 @@ a {
 }
 
 .hero .watch-video span {
-    color: var(--primary-color);
+    color: #171100;
     font-size: 1.8rem;
     font-weight: 600;
 }
@@ -280,7 +279,7 @@ a {
 }
 
 .hero .desc.stats strong {
-    color: var(--primary-color);
+    color: #171100;
     font-family: "Sen", sans-serif;
     font-size: 4.4rem;
     font-weight: 700;
@@ -292,9 +291,10 @@ a {
     margin-left: 28px;
 }
 
-/* ============== Common ====================*/
+/* ============== Popular ====================*/
+
 /* ============== Common ====================*/
 /* ============== Common ====================*/
 main {
-    height: 1000px;
+    height: 3000px;
 }
