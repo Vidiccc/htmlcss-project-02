@@ -518,8 +518,88 @@ a {
     line-height: 1.54; /* 153.846% */
 }
 
+/* ============== Features ====================*/
+.features-1,
+.features-2 {
+    margin-top: 136px;
+    padding-top: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.features-1 .img-block {
+    width: 49%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.features-1 .img-block .left {
+    padding-top: 34px;
+}
+
+.features-1 .img-block img {
+    width: 270px;
+    height: 404px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.features-1 .info {
+    width: 41%;
+}
+
+.features-1 .info .desc {
+    margin-top: 16px;
+    color: #5f5b53;
+    font-size: 1.6rem;
+    line-height: 1.75; /* 175% */
+}
+
+.features-1 .info .sign-up-btn {
+    margin-top: 32px;
+    min-width: 137px;
+    border: none;
+    background: #ffb900;
+
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+}
+
+.features-2 .info {
+    width: 49%;
+}
+
+.features-2 .desc {
+    margin-top: 16px;
+    color: #5f5b53;
+    font-size: 1.6rem;
+    line-height: 1.75; /* 175% */
+}
+
+.features-2 .join-now-btn {
+    margin-top: 32px;
+    min-width: 137px;
+    border: none;
+    background: #ffb900;
+
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+}
+
+.features-2 img {
+    width: 470px;
+    height: 440px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+/* ============== Common ====================*/
 /* ============== Common ====================*/
 /* ============== Common ====================*/
 main {
-    height: 3000px;
+    height: 5000px;
 }
