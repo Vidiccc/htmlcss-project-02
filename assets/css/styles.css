@@ -381,6 +381,7 @@ a {
 .course-list .course-item:hover {
     box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
     border-color: transparent;
+    transition: all ease 0.4s;
 }
 
 .course-list .thumb {
@@ -449,9 +450,17 @@ a {
     background-color: #2e2100;
 }
 
+.feedback-list {
+    display: flex;
+    overflow: hidden;
+}
+
 .feedback-item {
     display: flex;
     justify-content: space-between;
+
+    flex-shrink: 0;
+    width: 100%;
 }
 
 .feedback-item .info {
