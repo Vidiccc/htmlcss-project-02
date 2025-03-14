@@ -72,6 +72,24 @@ a {
     cursor: pointer;
 }
 
+.line-clamp {
+    --line-clamp: 1;
+
+    display: -webkit-box;
+    line-clamp: var(--line-clamp);
+    -webkit-line-clamp: var(--line-clamp);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+
+.break-all {
+    word-break: break-all;
+}
+
 /* ============== Header ====================*/
 .header {
     padding: 36px 0 8px;
@@ -385,6 +403,7 @@ a {
 }
 
 .course-list .rating {
+    padding-left: 8px;
     display: flex;
     align-items: center;
     gap: 6px;
