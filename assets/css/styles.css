@@ -703,6 +703,14 @@ a {
     gap: 6px;
 }
 
+.blog .dot {
+    background-color: #5f5b53;
+}
+
+.blog .dot.active {
+    background-color: var(--primary-color);
+}
+
 /* ============== Footer ====================*/
 
 main {
