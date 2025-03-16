@@ -97,10 +97,12 @@ a {
     height: 6px;
     border-radius: 50%;
     background-color: #634700;
+    cursor: pointer;
 }
 
 .dot.active {
     background-color: var(--primary-color);
+    cursor: default;
 }
 
 /* ============== Header ====================*/
@@ -659,7 +661,11 @@ a {
     position: relative;
 }
 
-.blog-item .date .dot {
+.blog-item .date-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+
     background-color: var(--primary-color);
 }
 
