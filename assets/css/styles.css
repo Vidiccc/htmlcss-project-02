@@ -373,6 +373,7 @@ a {
     color: var(--primary-color);
     background-color: white;
     cursor: pointer;
+    transition: all ease 0.15s;
 }
 
 .popular-top .control-btn:hover {
