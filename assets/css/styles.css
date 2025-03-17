@@ -626,12 +626,22 @@ a {
     line-height: 1.75; /* 175% */
 }
 
-.blog .blog-list {
-    margin-top: 55px;
+.blog .blog-carousel {
     display: flex;
-    gap: 30px;
     overflow: clip;
     overflow-clip-margin: 56px;
+}
+
+.blog .blog-list {
+    margin-top: 55px;
+    margin-right: calc(100vw - 100%);
+    width: 100%;
+    display: flex;
+    flex-shrink: 0;
+    gap: 30px;
+
+    /* transition: all ease 1s; */
+    transform: translateX(-100vw);
 }
 
 .blog-list .blog-item {
@@ -644,10 +654,6 @@ a {
 .blog-list .blog-item:hover {
     box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
     transition: all ease 0.4s;
-}
-
-.blog-list .blog-item:nth-child(3n + 4) {
-    opacity: 0;
 }
 
 .blog-item .thumb {
