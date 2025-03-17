@@ -390,13 +390,15 @@ a {
     width: 32%;
     border-radius: 12px;
     border: 1px solid #e2dfda;
+
     background: #fff;
+    transition: all ease 0.4s;
 }
 
 .course-list .course-item:hover {
-    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+    transform: translateY(-8px);
+    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.1);
     border-color: transparent;
-    transition: all ease 0.4s;
 }
 
 .course-list .thumb {
