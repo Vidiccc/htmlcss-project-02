@@ -7,6 +7,11 @@
     --primary-color: #ffb900;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -14,6 +19,13 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
+}
+/* ============== Scrolling Behavior ====================*/
+#reviews {
+    scroll-margin-top: 66px;
+}
+#blogs {
+    scroll-margin-top: -32px;
 }
 
 /* ============== Common ====================*/
@@ -788,7 +800,7 @@ footer .info-left .social {
 }
 
 footer .info-left .social a {
-    transition: all ease 0.25s;
+    transition: all ease 0.15s;
 }
 
 footer .info-left .social a:hover {
