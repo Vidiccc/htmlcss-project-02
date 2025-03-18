@@ -293,6 +293,11 @@ a {
     background-color: transparent;
 
     cursor: pointer;
+    transition: all ease 0.4s;
+}
+
+.hero .watch-video:hover {
+    transform: translateY(-4px);
 }
 
 .hero .watch-video .icon-bg {
