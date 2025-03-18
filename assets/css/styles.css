@@ -849,7 +849,7 @@ footer .info .desc .title {
     line-height: 1.86; /* 185.714% */
 }
 
-footer .info .desc + .desc:hover .title {
+footer .info-right .desc + .desc:hover .content {
     text-decoration: underline;
 }
 
